@@ -112,7 +112,7 @@ Crafty.scene("main", function() {
         
         if (msg == 'carrots') {
             //$('#msgs').css('color','#aa0000');
-            $('#msgs').text('You have no carrots to eat!');
+            $('#msgs').text('食べる人参はもうないよ！');
         } else if (msg == 'clear') {
             $('#msgs').text('');
             return;
@@ -180,7 +180,7 @@ Crafty.scene("main", function() {
             
             // DEBUG
             if (_Globals.conf.get('debug')) {
-                console.log('Turn passed! New limites carrots: %d, enemies: %d', 
+                console.log('パスに成功した新たな限定人参: %d, 敵: %d', 
                     tilemap.get('maxCarrots'),
                     maxEnemies);
             }
