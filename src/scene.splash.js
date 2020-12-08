@@ -67,9 +67,9 @@ Crafty.scene("splash", function() {
             "width": 720,
             "height": 440,
             modal: true,
-            "title": "How to play",
+            "title": "遊び方",
             buttons: {
-                "Sounds legit": function() {
+                "いいんじゃない？": function() {
                     $(this).dialog("close");
                 }
             },
@@ -87,9 +87,9 @@ Crafty.scene("splash", function() {
             "width": 480,
             "height": 280,
             modal: true,
-            "title": "Credits",
+            "title": "クレジット",
             buttons: {
-                "Ok": function() {
+                "了解": function() {
                     $(this).dialog("close");
                 }
             },
