@@ -55,20 +55,34 @@ body, html {
     bottom: 0;
     right: 0;
 }
+.container{
+	align-content: center;
+	margin: auto;
+	width: 60%;
+}
 #menu {
-    position: absolute;
-    width: 768px;
-    left: 128px;
-    top: 666px;
-    z-index:3;
+	display: flex;
+	justify-content: space-evenly;
+	position: absolute;
+	padding-bottom: 65px;
+	bottom: 0;
+	width: 60%;
+	z-index: 10;
 }
 #menu>div {
-    position: absolute;
+    position: relative;
     font-size: 18px;
     color: white;
     text-shadow: 1px 1px green;    
     display: inline;
     cursor: pointer;
+	background: rgb(109,150,47);
+	background: linear-gradient(189deg, rgba(109,150,47,1) 0%, rgba(27,37,9,1) 100%);
+	border: 1px solid gray;
+	border-bottom: 1px solid darkolivegreen;
+	border-radius: 3px;
+	padding: 10px;
+	border-radius: 20px;
 }
 #menu>div:hover {
     color: #121212;
@@ -237,7 +251,6 @@ div.text {
     margin-top: 732px;
     z-index: 2;
 }
-
 /*
     Mobile 
 
