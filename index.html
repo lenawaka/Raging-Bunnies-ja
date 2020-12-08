@@ -25,32 +25,29 @@
     <div id="dialog-save-score" style="display: none;"></div>
     <div id="dialog-score" style="display: none;"></div>
     <div id="dialog-howto" style="display: none;">
-    <h1>Story</h1>
+    <h1>物語</h1>
     <p>
-    It's a lovely day at farmers field. A great time for a hungry (ninja) rabbit to sneak in and <span class="keys">pull</span> 
-    some carrots to eat. Too bad you weren't the only one with that idea. A horde of hungry opponents approaches fast! 
-    Pull as many carrots as you can in <span class="keys">3 minutes</span>. To fight your opponents, you must use ancient rabbitjutsu tactics. 
-    These are slightly unorthodox. Simply uhm ... fart to <span class="keys">push</span> your opponents away or use a 
-    <span class="keys">Carrot-on-a-Fork</span> totem decoy to deceive them. The totem is spawned on your current position.
+		今日はファーマーズ・フィエルドで素敵な日になりそうだ。お腹ペコペコの忍者ウサギたちが忍び込んで、人参を<span class="keys">抜いて</span>食べるにはビッタリな日だ。残念ながら、その考えを持っていたのはあなただけでない。空腹の敵の大群が襲ってくる。3分以内に<span class="keys">人参をできるだけ引っ張っていこう。</span>.敵と戦うには、古代のウサギ術を使わなくてはならん。まあ、正統でないが…単純に言えば…オナラをして 、敵を<span class="keys">押し除ける</span>か、 <span class="keys">串人参わな</span>トーテムを使って敵を騙すか。トーテムはあなたの自在地に産み付けることができる。
     </p>
-    <h1>Goal &amp; Controls</h1>
-    <p>Collect as many carrots as possible in 3 minutes. Use the controls to move and repel opponents.</p>
+    <h1>コントロール</h1>
+    <p>3分以内でできるだけ人参を集めていこう。コントロールを使用して動いたり、敵を退けったりする。</p>
     <ul>
-        <li><span class="keys">Arrow keys</span> - Move your ninja rabbit on the map.</li>
-        <li><span class="keys">Z (or Y)</span> - Hold down to pull a carrot from the ground. You need to be close to a carrot.</li>
-        <li><span class="keys">Q</span> - Eat <span class="keys">1 carrot</span> and fart to push opponents away from you.</li>
-        <li><span class="keys">W</span> - Eat <span class="keys">2 carrots</span> and spawn a "Carrot-on-a-Fork" totem that attracts 
-        opponents and gives you time to pull more carrots elsewhere on the map.</li>
+		<li><span class="keys">矢印キー</span>・忍者ウサギを地図上で動かす。</li>
+        <li><span class="keys">Z (または Y)</span> 押し付けて人参を地面から抜き出す。人参の近くにいないとできない。</li>
+        <li><span class="keys">Q</span> - 人参を <span class="keys">食べて、</span>オナラしたら敵を押し除ける。
+</li>
+        <li><span class="keys">W</span> - 人参を<span class="keys">食べて</span>敵を引きつける「串人参わなトーテム」を生み付けることで、より多くの人参を引き出す時間を作る。</li>
     </ul>
     </div>
     <div id="dialog-credits" style="display: none;">
-        <p>Game design and programming - <a href="http://petarov.vexelon.net">Petar Petrov</a></p>
+        <p>ゲームデザイン＆プログラミング - <a href="http://petarov.vexelon.net">ペトロフ・ピーター</a></p>
         <br />
-        <p>Art and graphics - <a href="http://stremena.com/">Stremena Tuzsuzova</a></p>
+        <p>アート＆グラフィック - <a href="http://stremena.com/">タズスーゾバー・ストレメナー</a></p>
         <br />
-        <p>Sound and Music - <a href="https://github.com/petarov/game-off-2012#sound-and-music">See here</a></p>
+        <p>サウンド＆音楽 - <a href="https://github.com/petarov/game-off-2012#sound-and-music">こちら</a></p>
     </div>
-    <div id="dialog-restart" style="display: none;">Would you like to restart the game?</div>
+    <div id="dialog-restart" style="display: none;">ゲームを再起動する？
+</div>
     
     <div id="fps" style="display: none;"></div>
 
@@ -70,15 +67,21 @@
                 <div id="toggle-music"></div>
                 <div id="toggle-sfx"></div>
             </div>
-            <div id="menu" style="display: none;">
-                <div id="menu-start" class="button" style="left: 76px">Play Game</div>
-                <div id="menu-howto" class="button" style="left: 248px">How to Play</div>
-                <div id="menu-hiscore" class="button" style="left: 438px">Hiscores</div>
-                <div id="menu-credits" class="button" style="left: 618px">Credits</div>
+			<div class="container">
+				<div id="menu" style="display: none;" class="parent">
+					<div id="menu-start" class="item">スタート</div>
+					<div id="menu-howto" class="item">遊び方</div>
+					<div id="menu-hiscore" class="item">ハイスコア</div>
+					<div id="menu-credits" class="item">クレジット</div>
+				</div>
             </div>
-        </div>
+			<div>
+
+            </div>
+	
+		</div>
     </div>
-    <p class="safari">Music and sounds are currently not supported on Safari. :(</p>
+    <p class="safari">サウンド＆音楽は現在のところサファリでサポートされていません。:(</p>
     <div id="logo">
         <div id="version" style="display: none;"></div>
     </div>
@@ -89,6 +92,6 @@ window._Globals = {env:'dev', version:ver, scene:'splash'};
 var require = {waitSeconds:15, urlArgs:"bust="+ver};
 </script>
 <script data-main="src/bootstrap" src="lib/require.js">
-</script
+	</script>
 </body>
 </html>
